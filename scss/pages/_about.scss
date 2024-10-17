@@ -1,0 +1,46 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+// About
+.about {
+
+    overflow: hidden;
+
+    //Section home about
+    .about-content {
+
+        // display: grid;
+        // grid-template-rows: repeat(2, 1fr);
+        // place-items: center;
+        // gap: 1.5rem;
+
+        // @include m.breakpoint-up(lg) {
+        //     grid-template-rows: unset;
+        //     grid-template-columns: repeat(2, 1fr);
+        //     gap: 3rem;
+        // }
+
+
+        // &-description {
+
+        //     grid-row: 2 / 3;
+
+        //     @include m.breakpoint-up(lg) {
+        //         grid-row: unset;
+        //     }
+
+        // }
+
+        &-image {
+            border: 1px solid v.$secondary-color;
+            border-radius: .5rem;
+            min-width: 18.875rem;
+            min-height: 100%;
+            object-fit: cover;
+
+        }
+
+    }
+
+
+}
