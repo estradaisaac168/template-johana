@@ -179,6 +179,7 @@
 
 
 .service-card {
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -192,35 +193,39 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
+
+}
+
+.item1 {
+    background-image: url(./../img/service5.jpg);
+
+}
+
+.item2 {
+    background-image: url(./../img/service2.jpg);
+
+}
+
+.item3 {
+    background-image: url(./../img/service7.jpg);
+
+
+}
 
 /* Imagen de fondo específica por servicio */
-.service-card:nth-child(1) {
-    background-image: url(./../img/service1.jpg);
+// .service-card:nth-child(1) {
+//     background-image: url(./../img/service5.jpg);
 
-}
+// }
 
-.service-card:nth-child(2) {
-    background-image: url(./../img/service2.jpg);
-}
+// .service-card:nth-child(2) {
+//     background-image: url(./../img/service2.jpg);
+// }
 
-.service-card:nth-child(3) {
-    background-image: url(./../img/service3.jpg);
-}
+// .service-card:nth-child(3) {
+//     background-image: url(./../img/service3.jpg);
+// }
 
-
-.service-card:nth-child(4) {
-    background-image: url(./../img/service1.jpg);
-
-}
-
-.service-card:nth-child(5) {
-    background-image: url(./../img/service2.jpg);
-}
-
-.service-card:nth-child(6) {
-    background-image: url(./../img/service3.jpg);
-}
 
 /* Capa de opacidad */
 .service-card::before {
@@ -230,29 +235,30 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
-  }
-  
-  /* Borde interno */
-  .service-card::after {
+}
+
+/* Borde interno */
+.service-card::after {
     content: '';
     position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    border: 1px solid v.$secondary-color; /* Línea del borde */
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    border: 1px solid v.$secondary-color;
+    /* Línea del borde */
     z-index: 2;
     pointer-events: none;
-  }
-  
-  /* Texto */
-  .service-title {
+}
+
+/* Texto */
+.service-title {
     position: relative;
     color: lighten(v.$secondary-color, .2%);
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
     z-index: 3;
-  }
+}
