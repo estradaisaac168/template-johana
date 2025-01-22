@@ -179,7 +179,7 @@
 
 
 .service-card {
-
+    padding: 35px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -198,18 +198,26 @@
 
 .item1 {
     background-image: url(./../img/service5.jpg);
-
 }
 
 .item2 {
-    background-image: url(./../img/service2.jpg);
-
+    background-image: url(./../img/service4.jpg);
 }
 
 .item3 {
     background-image: url(./../img/service7.jpg);
+}
 
+.item4 {
+    background-image: url(./../img/service2.jpg);
+}
 
+.item5 {
+    background-image: url(./../img/service6.jpg);
+}
+
+.item6 {
+    background-image: url(./../img/service1.jpg);
 }
 
 /* Imagen de fondo específica por servicio */
