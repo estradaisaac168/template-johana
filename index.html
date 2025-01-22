@@ -23,8 +23,10 @@
         rel="stylesheet"> -->
     <!-- CUSTOM CSS -->
     <!-- <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'"> -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.css">
     <!-- CDN STYLE -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <link rel="preload" href="./img/hero.webp" as="image">
 
@@ -151,25 +153,89 @@
     </section>
 
 
+    <section class="section bg-primary">
+        <div class="container">
+            <div class="content-title">
+                <h2 class="heading text-white">¿Por qué elegirme?</h2>
+                <p class="lead text-white">Brindo servicios legales de calidad que se adaptan a tus
+                    necesidades.</p>
+                <hr class="text-secondary my-3">
+            </div>
+
+            <div class="row row-cols-1 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="why-item d-flex flex-column justify-content-center align-items-center px-2">
+                        <span class=""><i class="text-secondary fs-1 bi bi-shield-lock"></i></span>
+                        <h5 class="my-3 text-white text-center fs-4">Confianza</h5>
+                        <p class="text-white text-center">Mi reputación se basa en años de experiencia y resultados
+                            exitosos en la
+                            protección de los intereses de mis clientes.</p>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="why-item d-flex flex-column justify-content-center align-items-center px-2">
+                        <span class=""><i class="text-secondary fs-1 bi bi-person-badge"></i></span>
+                        <h5 class="my-3 text-white text-center fs-4">Asesoria Personalizada</h5>
+                        <p class="text-white text-center">Ofresco atención individualizada para entender y abordar tus
+                            necesidades
+                            específicas, asegurando un enfoque a medida.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="col">
+                    <div class="why-item d-flex flex-column justify-content-center align-items-center px-2">
+                        <span class=""><i class="text-secondary fs-1 bi bi-check-circle"></i></span>
+                        <h5 class="my-3 text-white text-center fs-4">Resultados comprobados</h5>
+                        <p class="text-white text-center">Mi historial de casos exitosos habla por sí mismo, demostrando
+                            mi
+                            capacidad para obtener resultados favorables para mis clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- ABOUT -->
     <section id="about" class="section about">
         <div class="container">
 
-            <div class=" row about-content mt-lg-5">
-                <div class="col-12 col-lg-6 pb-3 p-md-3 d-flex align-items-center justify-content-center">
+            <div class=" row row-cols-1 row-cols-lg-2 about-content mt-lg-5">
+                <div class="col pb-3 p-md-3 d-flex align-items-center justify-content-center">
                     <div class="about-content-description">
                         <h2 class="heading text-uppercase text-start title-animation">Sobre mi</h2>
-                        <p class="text-black animation-left">Soy [Tu Nombre], un abogado con más de [X años] de
+                        <p class="text-black animation-left lh-lg">Soy [Tu Nombre], un abogado con más de [X años] de
                             experiencia en [menciona áreas de práctica, como derecho civil, comercial, familiar, etc.].
                             Me
                             apasiona ayudar a mis clientes a resolver sus problemas legales de manera efectiva y
                             brindarles
                             asesoría personalizada. Mi compromiso es ofrecer soluciones adaptadas a cada situación,
                             garantizando que mis clientes se sientan apoyados y seguros en cada paso del proceso.</p>
+
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="https://facebook.com" class="social-link" target="_blank" title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://instagram.com" class="social-link" target="_blank" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://twitter.com" class="social-link" target="_blank" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://wa.me/1234567890" class="social-link" target="_blank" title="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+
+                        
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 p-md-3 d-flex flex-column align-items-center justify-content-center">
-                    <img src="./img/about.webp" class="img-fluid about-content-image fade-in animation-right" width=""
+                <div class="col p-md-3 d-flex flex-column align-items-center justify-content-center">
+                    <img src="./img/about.webp" class="img-fluid rounded about-content-image fade-in animation-right" width=""
                         height="" loading="lazy" alt="About">
                 </div>
             </div>
@@ -445,8 +511,9 @@
     <section class="call">
         <div class="call-overlay"></div>
         <div class="call-content">
-            <div class="text-center">
-                <h2 class="heading text-white title-animation display-5">¿Necesitas asistencia legal?</h2>
+            <div class="text-center d-flex flex-column align-items-center">
+                <h2 class="heading text-white title-animation">¿Necesitas asistencia legal?</h2>
+                <p class="lead text-center text-white w-75">Lorem ipsum dolor sit amet consectetur adipisiquae totam fuga, a at voluptate molestias aut, itaque qui tempora odit! Delectus consectetur animi, rerum neque sed ipsam.</p>
             </div>
             <button class="btn btn-lg btn-secondary pulse mt-4">CONSULTA GRATIS</button>
         </div>

@@ -32,23 +32,23 @@ body {
     transition: color 0.3s ease-in-out;
 
 
-    &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 0;
-        height: 3px;
-        background-color: v.$secondary-color;
-        transition: width 0.4s ease-in-out;
-    }
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     left: 0;
+    //     bottom: 0;
+    //     width: 0;
+    //     height: 3px;
+    //     background-color: v.$secondary-color;
+    //     transition: width 0.4s ease-in-out;
+    // }
 
-    &:hover {
-        &::after {
-            width: 100%;
+    // &:hover {
+    //     &::after {
+    //         width: 100%;
 
-        }
-    }
+    //     }
+    // }
 
 }
 
