@@ -11873,7 +11873,7 @@ body {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   100% {
     transform: scale(1);
@@ -12204,6 +12204,80 @@ body {
 .benefits .content-benefits .list-benefits .list-grid .bi {
   font-size: 3rem;
   color: rgb(212, 175, 55);
+}
+
+.service-card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Imagen de fondo específica por servicio */
+.service-card:nth-child(1) {
+  background-image: url(./../img/service1.jpg);
+}
+
+.service-card:nth-child(2) {
+  background-image: url(./../img/service2.jpg);
+}
+
+.service-card:nth-child(3) {
+  background-image: url(./../img/service3.jpg);
+}
+
+.service-card:nth-child(4) {
+  background-image: url(./../img/service1.jpg);
+}
+
+.service-card:nth-child(5) {
+  background-image: url(./../img/service2.jpg);
+}
+
+.service-card:nth-child(6) {
+  background-image: url(./../img/service3.jpg);
+}
+
+/* Capa de opacidad */
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Borde interno */
+.service-card::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border: 1px solid rgb(212, 175, 55); /* Línea del borde */
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Texto */
+.service-title {
+  position: relative;
+  color: rgb(212.1804938272, 175.3358024691, 55.8395061728);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 3;
 }
 
 .contact {
